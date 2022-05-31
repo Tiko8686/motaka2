@@ -19,18 +19,10 @@ export const SignUp = () => {
   // const history = useHistory();
   const navigate=useNavigate();
   const SignIn = (value) => {
-    
     // history.push(value);
     navigate("/signin")
-    
 
   };
-  const toggleModal = () => {
-    setSignin(false);
-    setSignup(!signup);
-  
- 
-  }
   const dispatch = useDispatch();
   const state = useSelector((state) => state);
   const { isPasswordShow, isRePasswordShow, isUser, isProvider, isArsen } =
@@ -86,8 +78,6 @@ export const SignUp = () => {
   const [phone, setPhone] = useState("");
   const [show, setShow] = useState(false);
   const [email, setEmail] = useState("");
-  const [signup, setSignup] = useState(false);
-  const [signin, setSignin] = useState(false);
   const [verification, setVerification] = useState({
     isVerificationCode: false,
   });
@@ -111,7 +101,6 @@ export const SignUp = () => {
     //     body: formData,
     //     headers: {'Content-Type': 'application/json'}
     // };
-    
     const allInput =
       firstName === "" ||
       lastName === "" ||
@@ -146,7 +135,6 @@ export const SignUp = () => {
         .then((response) => {
           if (response.ok) {
             setVerification({ isVerificationCode: true });
-            toggleModal();
           }
           console.log(response);
           return response.json();
@@ -209,7 +197,6 @@ export const SignUp = () => {
 
         <div className="aside_right_SignUp">
           <h1>Create Account</h1>
-          <button className="close" onClick={toggleModal}>X</button>
 
           <form onSubmit={handleSubmit}>
             <div className="user" onClick={() => funcCheckUser(isUser)}>
@@ -296,6 +283,7 @@ export const SignUp = () => {
               }}
               // onChange={()=>{
               //   setShow(true)
+
               // }}
               onInput={handleChange1}
               autoComplete={"password"}
