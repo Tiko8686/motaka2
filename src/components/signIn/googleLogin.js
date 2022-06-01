@@ -5,7 +5,7 @@ import GoogleLogin from "react-google-login";
 import { gapi } from "gapi-script";
 import FacebookLogin from "react-facebook-login";
 
-const googleClientId = "157706975933-5mp07f2obqtjbrtbf3amqvts8s7q8puf.apps.googleusercontent.com";
+const googleClientId = "1029980355734-k642a09cmscarg7dad5m1nguvllkf5gi.apps.googleusercontent.com";
 
 function Login() {
   useEffect(() => {
@@ -21,7 +21,7 @@ function Login() {
   const onSuccess = (res) => {
     console.log("sucess login", res);
     axios
-      .post("https://motaka.herokuapp.com//googleLogin", {
+      .post("https://motaka.herokuapp.com/googleLogin", {
         auth_token: res.tokenId,
       })
       .then((res) => {
