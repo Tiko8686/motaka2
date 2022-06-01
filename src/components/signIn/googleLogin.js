@@ -22,13 +22,13 @@ function Login() {
     console.log("sucess login", res);
     axios
       .post("https://motaka.herokuapp.com/googleLogin", {
-        auth_token: res.tokenId,
+        tokenId: res.tokenId,
       })
       .then((res) => {
         console.log(res.data);
         let a = "JWT " + res.data.access;
         axios
-          .get("https://motaka.herokuapp.com//googleLogin", {
+          .get("https://motaka.herokuapp.com/googleLogin", {
             headers: { Authorization: a },
           })
           .then((response) => {
@@ -72,7 +72,8 @@ function Login() {
     // console.log("token",accessToken);
     axios
       .post("https://motaka.herokuapp.com/facebookLogin", {
-        auth_token: response.accessToken,
+        accessToken: response.accessToken,
+        userId:response.userID,
       })
       .then((res) => {
         console.log(res.data);
