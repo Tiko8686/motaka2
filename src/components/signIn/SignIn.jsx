@@ -15,8 +15,8 @@ import eyeOpen from "../image/eyeOpen.jpg";
 import eyeClosed from "../image/eyeClosed.jpg";
 import G from "../image/G.png";
 import F from "../image/F.png";
-import GoogleLogin from "react-google-login";
-import FacebookLogin from "react-facebook-login";
+
+import Login from "./googleLogin";
 
 export const SignIn = () => {
   const navigate = useNavigate();
@@ -63,7 +63,7 @@ export const SignIn = () => {
     } else {
       fetch(url, {
         method: "POST",
-        headers: { "Content-Type":"application/json" },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           password,
           phone,
@@ -74,11 +74,13 @@ export const SignIn = () => {
           //     setVerification({isVerificationCode: true})
           // }
           console.log(response);
+
           return response.json();
         })
 
         .then((data) => {
-          console.log("Registration Success:", data);
+          console.log("login Success:", data);
+          navigate("/profile");
         })
         .catch((error) => {
           console.error("Error:", error);
@@ -86,34 +88,73 @@ export const SignIn = () => {
     }
   };
 
-  const successResponseGoogle = (response) => {
-    fetch("https://motaka.herokuapp.com/googleLogin", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        tokenId: response.tokenId,
-      }),
-    })
-      .then((response) => {
-        console.log(response);
-        return response.json();
-      })
+  // const successResponseGoogle = (response) => {
+  //   fetch("https://motaka.herokuapp.com/googleLogin", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/json" },
+  //     body: JSON.stringify({
+  //       tokenId: response.tokenId,
+  //     }),
+  //   })
+  //     .then((response) => {
+  //       console.log(response);
+  //       return response.json();
+  //     })
 
-      .then((data) => {
-        console.log("login Success:", data);
-        navigate("/profile");
-        localStorage.setItem("token", JSON.stringify(data));
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-      });
-  };
-  const errorResponseGoogle = (response) => {
-    console.log(response, "error");
-  };
-  const successResponseFacebook = (response) => {
-    console.log(response);
-  };
+  //     .then((data) => {
+  //       console.log("login Success:", data);
+  //       navigate("/profile");
+  //       localStorage.setItem("token", JSON.stringify(data));
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error:", error);
+  //     });
+  // };
+  
+  // const successResponseFacebook = (response) => {
+  //   console.log("hesa", response);
+  //   console.log("token hesa", response.accessToken);
+
+  //   // setAccessToken(response.accessToken);
+  //   // console.log("token",accessToken);
+  //   axios
+  //     .post("https://motaka.herokuapp.com/facebookLogin", {
+  //       accessToken: response.accessToken,
+
+  //     })
+  //     .then((res) => {
+  //       console.log(res.data);
+  //       let a = "JWT " + res.data.access;
+  //       axios
+  //         .get("https://socialreading.xyz/auth/users/me/", {
+  //           headers: { Authorization: a },
+  //         })
+  //         .then((response) => {
+  //           console.log("act fb", response.data);
+  //           localStorage.setItem("token", JSON.stringify(res.data));
+  //           localStorage.setItem("user", JSON.stringify(response.data));
+  //           window.location.reload();
+  //         })
+  //         .catch((error) => {
+  //           if (error.response) {
+  //             console.log("error.response ", error.response);
+  //           } else if (error.request) {
+  //             console.log("error.request ", error.request);
+  //           } else if (error.message) {
+  //             console.log("error.request ", error.message);
+  //           }
+  //         });
+  //     })
+  //     .catch((error) => {
+  //       if (error.response) {
+  //         console.log("error.response ", error.response);
+  //       } else if (error.request) {
+  //         console.log("error.request ", error.request);
+  //       } else if (error.message) {
+  //         console.log("error.message ", error.message);
+  //       }
+  //     });
+  // };
 
   return (
     <header className="header">
@@ -130,11 +171,13 @@ export const SignIn = () => {
       </div>
       <div className="aside_right">
         <h1>Sign In to Motaka</h1>
+        
         <div className="social">
-          <div>
+         
+          {/* <div>
             <GoogleLogin
               className="login_google"
-              clientId="672599364365-tpf3f4okr12q4la8su1vrdhhd8gmsm2f.apps.googleusercontent.com"
+              clientId="157706975933-21g5cnl5md8v8ebemqm4qifpt52oo049.apps.googleusercontent.com"
               buttonText=" Google"
               onSuccess={successResponseGoogle}
               onFailure={errorResponseGoogle}
@@ -142,17 +185,20 @@ export const SignIn = () => {
               onAutoLoadFinished={false}
             />
             ,
-          </div>
-          <FacebookLogin
+          </div> */}
+          {/* <FacebookLogin
             className="login_facebook "
-            appId="732890848050124"
+            appId="416088757103581"
             autoLoad={false}
-            textButton="F continue with facebook"
+            textButton="continue with facebook"
             callback={successResponseFacebook}
           />
-          ,
+          , */}
         </div>
-        <p className="or">-OR-</p>
+        
+        <p className="or">
+        <Login>-OR-</Login>
+        </p>
 
         <form onSubmit={handleSubmit}>
           <InputMask

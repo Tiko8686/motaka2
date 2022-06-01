@@ -28,6 +28,7 @@
     "express": "^4.17.3",
     "formdata-node": "^4.3.2",
     "formik": "^2.2.9",
+    "gapi-script": "^1.2.0",
     "http": "^0.0.1-security",
     "http-server": "^14.1.0",
     "jquery": "^3.6.0",
