@@ -184,7 +184,9 @@ export const SignUp = () => {
 
   return (
     <div className="signup">
+
       <header className="header_SignUp">
+
         <div className="aside_left_SignUp">
           <div className="shape1_reg"></div>
           <div className="text_SignUp">
@@ -196,6 +198,17 @@ export const SignUp = () => {
         </div>
 
         <div className="aside_right_SignUp">
+        <div className='nav_homePage'>
+                    <div>Motaka LOGO</div>
+                    <div>
+                        <p>Categories</p>
+                        <p>About Us</p>
+                    </div>
+                    <div>
+                        <img src={"./image/chat.jpg"} alt=""/>
+                        
+                    </div>
+                </div>
           <h1>Create Account</h1>
 
           <form onSubmit={handleSubmit}>

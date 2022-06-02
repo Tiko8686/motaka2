@@ -12,7 +12,7 @@ function AllRoutes() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
-
+          {/* <Route path="/aboutus" element={<Aboutus />} /> */}
           <Route path="/signup" element={<SignUp />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/signin" element={<SignIn />} />

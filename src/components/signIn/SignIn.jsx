@@ -158,6 +158,7 @@ export const SignIn = () => {
 
   return (
     <header className="header">
+    
       <div className="aside_left">
         <div className="shape1"></div>
         <div className="text">
@@ -170,6 +171,17 @@ export const SignIn = () => {
         <div className="shape2"></div>
       </div>
       <div className="aside_right">
+      <div className='nav_homePage'>
+                    <div>Motaka LOGO</div>
+                    <div>
+                        <p>Categories</p>
+                        <p>About Us</p>
+                    </div>
+                    <div>
+                        <img src={"chat.jpg"} alt=""/>
+                        
+                    </div>
+                </div>
         <h1>Sign In to Motaka</h1>
         
         <div className="social">

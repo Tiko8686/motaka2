@@ -84,16 +84,24 @@
       cursor: pointer;
     }
   }
+// .navbars{
+//   display: flex;
+// justify-content: center;
+// gap: 0;
+// }
 
 
 }
-
+.aboutus{cursor: pointer;}
+//   color: black;
+//   text-decoration: none;
+// }
 
 .title_homePage {
   display: flex;
   justify-content: center;
 
-  p {
+  p{
     position: absolute;
     width: 764px;
     height: 300px;

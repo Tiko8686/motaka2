@@ -51,8 +51,9 @@ export const HomePage = () => {
                 <div className='nav_homePage'>
                     <div>Motaka LOGO</div>
                     <div>
-                        <p>Categories</p>
-                        <p>About Us</p>
+                        <p >Categories</p>
+
+                        <p className='aboutus' onClick={navigate("/aboutus")}>About Us</p>
                     </div>
                     <div>
                         <img src={chat} alt=""/>
