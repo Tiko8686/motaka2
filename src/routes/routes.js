@@ -19,7 +19,6 @@ function AllRoutes() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/categories" element={<Categories/>} />
           <Route path="/signin" element={<SignIn />} />
-          <Route path="post" element={<Verification />} />
         </Routes>
       </BrowserRouter>
     </>
