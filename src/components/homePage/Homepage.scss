@@ -37,9 +37,11 @@
     color: #0DC46E;
 
   }
-
+  div:nth-child(2)>p{
+    cursor: pointer;
+  }
   div:nth-child(2) {
-
+    
     display: flex;
     gap: 48px;
     font-family: 'Poppins';
@@ -90,7 +92,9 @@
 // gap: 0;
 // }
 
-
+// .categories1{
+//   cursor: pointer;
+// }
 }
 .aboutus{cursor: pointer;}
 //   color: black;

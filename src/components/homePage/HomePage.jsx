@@ -28,6 +28,16 @@ import { useNavigate } from 'react-router';
 
 export const HomePage = () => {
     const navigate = useNavigate();
+    const About=()=>{
+        navigate("/aboutus")
+    }
+const Categories=()=>{
+    navigate("/categories")
+}
+const Home=()=>{
+    navigate("/")
+}
+
     const SignUp = (value) => {
        navigate("/signup")
     }
@@ -49,11 +59,11 @@ export const HomePage = () => {
         <header className='header_homePage'>
             <div className='container_homePage'>
                 <div className='nav_homePage'>
-                    <div>Motaka LOGO</div>
+                    <div onClick={Home}>Motaka LOGO</div>
                     <div>
-                        <p >Categories</p>
+                        <p onClick={Categories}>Categories</p>
 
-                        <p className='aboutus' onClick={navigate("/aboutus")}>About Us</p>
+                        <p className='aboutus' onClick={About}>About Us</p>
                     </div>
                     <div>
                         <img src={chat} alt=""/>
