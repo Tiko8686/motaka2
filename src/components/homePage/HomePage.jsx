@@ -34,9 +34,9 @@ export const HomePage = () => {
 const Categories=()=>{
     navigate("/categories")
 }
-const Home=()=>{
-    navigate("/")
-}
+// const Home=()=>{
+//     navigate("/")
+// }
 
     const SignUp = (value) => {
        navigate("/signup")
@@ -59,7 +59,7 @@ const Home=()=>{
         <header className='header_homePage'>
             <div className='container_homePage'>
                 <div className='nav_homePage'>
-                    <div onClick={Home}>Motaka LOGO</div>
+                    <div >Motaka LOGO</div>
                     <div>
                         <p onClick={Categories}>Categories</p>
 
