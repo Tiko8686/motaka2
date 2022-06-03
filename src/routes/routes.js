@@ -1,6 +1,4 @@
-import { HomePage } from "../components/homePage";
-
-import Verification from "../components/verification/Verification";
+import { HomePage } from "../components/homePage/HomePage";
 import { SignUp } from "../components/signUp/SignUp";
 import { SignIn } from "../components/signIn/SignIn";
 import Profile from "../components/Profile/profile";

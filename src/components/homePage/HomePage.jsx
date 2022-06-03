@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 import './Homepage.scss'
 import chat from '../image/chat.jpg'
@@ -22,7 +22,7 @@ import laundry from '../image/laundry.jpg'
 import plumbing from '../image/plumbing.jpg'
 import technology from '../image/technology.jpg'
 import beauty from '../image/beauty.jpg'
-import Verification from '../verification/Verification';
+
 import { useNavigate } from 'react-router';
 
 
