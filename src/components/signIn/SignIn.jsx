@@ -185,7 +185,7 @@ export const SignIn = () => {
         <h1>Sign In to Motaka</h1>
         
         <div className="social">
-         
+        
           {/* <div>
             <GoogleLogin
               className="login_google"
@@ -208,9 +208,9 @@ export const SignIn = () => {
           , */}
         </div>
         
-        <p className="or">
+        <div className="or">
         <Login>-OR-</Login>
-        </p>
+        </div>
 
         <form onSubmit={handleSubmit}>
           <InputMask

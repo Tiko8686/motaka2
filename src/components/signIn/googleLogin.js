@@ -8,15 +8,15 @@ import FacebookLogin from "react-facebook-login";
 const googleClientId = "1029980355734-k642a09cmscarg7dad5m1nguvllkf5gi.apps.googleusercontent.com";
 
 function Login() {
-  useEffect(() => {
-    function start() {
-      gapi.client.init({
-        clientId: googleClientId,
-        scope: "",
-      });
-    }
-    gapi.load("client:auth2", start);
-  }, []);
+  // useEffect(() => {
+  //   function start() {
+  //     gapi.client.init({
+  //       clientId: googleClientId,
+  //       scope: "",
+  //     });
+  //   }
+  //   gapi.load("client:auth2", start);
+  // }, []);
 
   const onSuccess = (res) => {
     console.log("sucess login", res);
@@ -121,7 +121,7 @@ function Login() {
         isSignedIn={true}
         onAutoLoadFinished={true}
       />
-        <p className="orr">OR</p>
+        <div className="orr">OR</div>
       <FacebookLogin
         appId="1042792122994981"
         fields="name,email,picture"
