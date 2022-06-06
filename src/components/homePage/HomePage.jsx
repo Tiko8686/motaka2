@@ -8,7 +8,7 @@ import Vector from '../image/Vector.jpg'
 import IconPerson from '../image/IconPerson.jpg'
 import IconList from '../image/IconList.jpg'
 import IconList1 from '../image/IconList1.jpg'
-import Fl from '../image/Fl.jpg'
+import Fl from '../image/Fl.jpg' 
 import Star from '../image/Star.jpg'
 import Star1 from '../image/Star1.jpg'
 import FBGreen from '../image/FBGreen.jpg'
@@ -24,8 +24,6 @@ import technology from '../image/technology.jpg'
 import beauty from '../image/beauty.jpg'
 
 import { useNavigate } from 'react-router';
-
-
 export const HomePage = () => {
     const navigate = useNavigate();
     const About=()=>{
@@ -53,8 +51,6 @@ const Categories=()=>{
     const Verification = (value) => {
         navigate("/verification")
     }
-
-
     return (
         <header className='header_homePage'>
             <div className='container_homePage'>
@@ -62,7 +58,6 @@ const Categories=()=>{
                     <div >Motaka LOGO</div>
                     <div>
                         <p onClick={Categories}>Categories</p>
-
                         <p className='aboutus' onClick={About}>About Us</p>
                     </div>
                     <div>
@@ -83,9 +78,7 @@ const Categories=()=>{
                             <img src={Search} alt=""/>
                         </div>
                     </div>
-
                     <img src={HPImg} alt=""/>
-
                 </div>
                 <div className='job_categories_homePage'>
                     <p>Popular <span>Job</span> Categories</p>

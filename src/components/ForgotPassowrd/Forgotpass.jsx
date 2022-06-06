@@ -4,22 +4,18 @@ import InputMask from "react-input-mask";
 
 const Forgotpass = () => {
   const [phone, setPhone] = useState("");
-
-
-
   const forgotPass = async (e) => {
-      const response = await fetch(
-        "https://motaka.herokuapp.com/forgot_password",
-        {
-          method: "POST", // или 'PUT'
-          body: JSON.stringify({ phone }), // данные могут быть 'строкой' или {объектом}!
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
+      // const response = await fetch(
+      //   "https://motaka.herokuapp.com/forgot_password",
+      //   {
+      //     method: "POST", // или 'PUT'
+      //     body: JSON.stringify({ phone }), // данные могут быть 'строкой' или {объектом}!
+      //     headers: {
+      //       "Content-Type": "application/json",
+      //     },
+      //   }
+      // );
   };
-
   return (
     <div className="password">
       <div className="password_text">

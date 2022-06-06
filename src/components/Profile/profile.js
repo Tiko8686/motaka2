@@ -3,7 +3,7 @@ import { Link, Outlet, useNavigate } from "react-router-dom";
 import "./profile.css";
 import { Button, Box, Slider } from "@material-ui/core";
 import AvatarEditor from "react-avatar-editor";
-import axios from "axios";
+
 
 function Profile() {
     const [userInfo, setUserInfo] = useState("");

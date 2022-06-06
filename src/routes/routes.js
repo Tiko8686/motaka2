@@ -3,7 +3,7 @@ import { SignUp } from "../components/signUp/SignUp";
 import { SignIn } from "../components/signIn/SignIn";
 import Profile from "../components/Profile/profile";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import AboutUs from "../components/Aboutus";
+import AboutUs from "../components/About/Aboutus";
 import Categories from "../components/categories/Categories";
 
 function AllRoutes() {
