@@ -3,7 +3,7 @@ import axios from "axios";
 
 import GoogleLogin from "react-google-login";
 
-import FacebookLogin from "react-facebook-login";
+// import FacebookLogin from "react-facebook-login";
 import { useEffect } from "react";
 import { gapi } from "gapi-script";
 
@@ -125,14 +125,14 @@ function Login() {
         // onAutoLoadFinished={true}
       />
       <div className="orr">OR</div>
-      <FacebookLogin
+      {/* <FacebookLogin
         appId="1042792122994981"
         fields="name,email,picture"
         callback={responseFacebook}
         cssClass="my-facebook-button-class"
         icon="fa-facebook"
         textButton=" Sign up with Facebook"
-      />
+      />\ */}
     </div>
   );
 }
