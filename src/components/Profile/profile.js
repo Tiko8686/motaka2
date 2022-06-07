@@ -12,22 +12,22 @@ function Profile() {
     const [token, setToken] = useState("");
     const navigate = useNavigate();
 
-    // useEffect(() => {
-    //     const tokenn = JSON.parse(localStorage.getItem("token"));
-    //     if (tokenn) {
-    //         setToken("JWT " + tokenn.access)
-    //     } 
+    useEffect(() => {
+        const tokenn = JSON.parse(localStorage.getItem("token"));
+        if (tokenn) {
+            setToken("JWT " + tokenn.access)
+        } 
 
-    //     if (!tokenn) {
-    //         navigate("/");
-    //     } else {
-    //         if (JSON.parse(localStorage.getItem("user"))) {
-    //             setUserInfo(JSON.parse(localStorage.getItem("user")));
-    //             setPicture({ ...picture, croppedImg: JSON.parse(localStorage.getItem("user")).avatar })
-    //             setPictureBack({ ...pictureBack, croppedImg: JSON.parse(localStorage.getItem("user")).profile_background })
-    //         }
-    //     }
-    // }, [navigate]);
+        if (!tokenn) {
+            navigate("/");
+        } else {
+            if (JSON.parse(localStorage.getItem("user"))) {
+                setUserInfo(JSON.parse(localStorage.getItem("user")));
+                setPicture({ ...picture, croppedImg: JSON.parse(localStorage.getItem("user")).avatar })
+                setPictureBack({ ...pictureBack, croppedImg: JSON.parse(localStorage.getItem("user")).profile_background })
+            }
+        }
+    }, [navigate]);
 
 
     // // base 64 to image

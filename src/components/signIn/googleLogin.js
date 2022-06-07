@@ -28,6 +28,8 @@ function Login() {
       })
       .then((res) => {
         console.log(res.data, 'okiii ');
+        localStorage.setItem("token", JSON.stringify(res.data.accessToken));
+        // localStorage.setItem("user", JSON.stringify(response.data));
         let a = "Bearer " + res.data.accessToken;
         axios
           .get("https://motaka.herokuapp.com/users", {
@@ -35,9 +37,9 @@ function Login() {
           })
           .then((response) => {
             console.log("act", response.data);
-            localStorage.setItem("token", JSON.stringify(res.data));
+            localStorage.setItem("token", JSON.stringify(res.data.accessToken));
             localStorage.setItem("user", JSON.stringify(response.data));
-            // window.location.reload();
+            window.location.reload();
           })
           .catch((error) => {
             if (error.response) {
