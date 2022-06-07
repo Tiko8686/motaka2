@@ -157,3 +157,4 @@ export const SignIn = () => {
     </header>
   );
 };
+export default SignIn;

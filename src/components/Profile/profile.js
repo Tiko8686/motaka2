@@ -3,14 +3,12 @@ import { Link, Outlet, useNavigate } from "react-router-dom";
 import "./profile.css";
 import { Button, Box, Slider } from "@material-ui/core";
 import AvatarEditor from "react-avatar-editor";
-
-
 function Profile() {
     const [userInfo, setUserInfo] = useState("");
     const [userGoogle, setUserGoogle] = useState("");
     const [userFb, setUserFb] = useState("");
     const [token, setToken] = useState("");
-    const navigate = useNavigate();
+    const navigate = useNavigate(); 
 
     useEffect(() => {
         const tokenn = JSON.parse(localStorage.getItem("token"));

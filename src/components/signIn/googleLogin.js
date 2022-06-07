@@ -6,11 +6,13 @@ import GoogleLogin from "react-google-login";
 import FacebookLogin from "react-facebook-login";
 import { useEffect } from "react";
 import { gapi } from "gapi-script";
+import { Navigate, useNavigate } from "react-router";
 
 const googleClientId =
   "1029980355734-k642a09cmscarg7dad5m1nguvllkf5gi.apps.googleusercontent.com";
 
 function Login() {
+  const navigate=useNavigate();
   useEffect(() => {
     function start() {
       gapi.client.init({
@@ -32,14 +34,15 @@ function Login() {
         // localStorage.setItem("user", JSON.stringify(response.data));
         let a = "Bearer " + res.data.accessToken;
         axios
-          .get("https://motaka.herokuapp.com/users", {
+          .get("https://motaka.herokuapp.com/users/me", {
             headers: { Authorization: a },
           })
           .then((response) => {
             console.log("act", response.data);
             localStorage.setItem("token", JSON.stringify(res.data.accessToken));
             localStorage.setItem("user", JSON.stringify(response.data));
-            window.location.reload();
+            
+            navigate('/')
           })
           .catch((error) => {
             if (error.response) {

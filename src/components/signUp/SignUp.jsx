@@ -381,7 +381,7 @@ export const SignUp = () => {
     </div>
   );
 };
-
+export default SignUp;
 // fetch(url, {
 //       method: 'POST',
 //       headers: {

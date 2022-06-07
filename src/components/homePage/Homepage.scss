@@ -1,20 +1,57 @@
 
-.header_homePage {
-  width: 1440px;
-  height: 3383px;
-  margin: 0 auto;
+// .dropdown-content>p {
+//   color: black;
+//   text-decoration: none;
+//   font-size: 18px;
+//   box-shadow: 0px 8px 16px 0px rgba(109, 108, 108, 0.2);
+//   border-radius: 5px;
+//   padding: 10px;
+// }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  width: 150px;
+  // display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  border-radius: 5px;
+  flex-direction: column;
+  list-style: none;
+  gap: 10px;
 
 }
 
-.container_homePage {
-  width: 1280px;
-  height: 4000px;
 
-  margin: 0 auto;
+.dropdown:hover .dropdown-content {
+  display: flex;
 }
+
+
+
+
+
+// .header_homePage {
+//   width: 1440px;
+//   height: 3383px;
+//   margin: 0 auto;
+
+// }
+
+// .container_homePage {
+//   width: 1280px;
+//   height: 4000px;
+//   margin: 0 auto;
+// }
 
 .nav_homePage {
-  position: absolute;
+  // position: absolute;
   top: 80px;
   width: 1280px;
   height: 48px;
@@ -24,47 +61,52 @@
   justify-content: space-between;
   align-items: center;
 
-  div:nth-child(1) {
+  // div:nth-child(1) {
 
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 32px;
-    display: flex;
-    align-items: center;
+  //   font-family: 'Poppins';
+  //   font-style: normal;
+  //   font-weight: 500;
+  //   font-size: 32px;
+  //   line-height: 32px;
+  //   display: flex;
+  //   align-items: center;
 
-    color: #0DC46E;
+  //   color: #0DC46E;
 
-  }
-  div:nth-child(2)>p{
-    cursor: pointer;
-  }
-  div:nth-child(2) {
+  // }
+  // .title_homePage{
+  //   display: flex;
+  //   justify-content: center;
+  //   gap: 100px;
+  // }
+  // div:nth-child(2)>p{
+  //   cursor: pointer;
+  // }
+  // div:nth-child(2) {
     
-    display: flex;
-    gap: 48px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 18px;
-    justify-content: end;
-    width: 400px;
-    color: #5E7286;
+  //   display: flex;
+  //   gap: 48px;
+  //   font-family: 'Poppins';
+  //   font-style: normal;
+  //   font-weight: 500;
+  //   font-size: 18px;
+  //   line-height: 18px;
+  //   justify-content: end;
+  //   width: 400px;
+  //   color: #5E7286;
 
-  }
+  // }
 
-  div:nth-child(3) {
+  // div:nth-child(3) {
 
-    display: flex;
-    justify-content: end;
-    gap: 107px;
+  //   display: flex;
+  //   justify-content: end;
+  //   gap: 107px;
 
 
-    img {
-      width: 10%;
-    }
+  //   img {
+  //     width: 10%;
+  //   }
 
     button {
       width: 179px;
@@ -93,13 +135,13 @@
 // }
 
 // .categories1{
-//   cursor: pointer;
+// //   cursor: pointer;
+// // }
 // }
-}
-.aboutus{cursor: pointer;}
-//   color: black;
-//   text-decoration: none;
-// }
+// .aboutus{cursor: pointer;}
+// //   color: black;
+// //   text-decoration: none;
+// // }
 
 .title_homePage {
   display: flex;
