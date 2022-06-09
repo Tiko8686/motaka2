@@ -22,7 +22,6 @@ import laundry from "../image/laundry.jpg";
 import plumbing from "../image/plumbing.jpg";
 import technology from "../image/technology.jpg";
 import beauty from "../image/beauty.jpg";
-
 import { useNavigate } from "react-router";
 export const HomePage = () => {
   const navigate = useNavigate();
@@ -35,7 +34,6 @@ export const HomePage = () => {
   // const Home=()=>{
   //     navigate("/")
   // }
-
   const SignUp = (value) => {
     navigate("/signup");
   };
@@ -52,57 +50,42 @@ export const HomePage = () => {
     navigate("/verification");
   };
   return (
-    <header className="header_homePage">
+    // <header className="header_homePage">
       <div className="container_homePage">
-        {/* <div className="nav_homePage">
-          <div>Motaka LOGO</div>
-          <div>
-            <div className="dropdown">
-              <p className="category">Categories</p>
-              <div className="dropdown-content">
-                <p>aaa</p>
-                <p>sss</p>
-              </div>
-            </div>
-            <p className="aboutus" onClick={About}>
-              About Us
-            </p>
-          </div>
-          <div>
-            <img src={chat} alt="" />
-            <button onClick={() => SignUp("SignUp")}>Sign Up</button>
-          </div>
-        </div> */}
+    <div className="first3">
         <div className="title_homePage">
-          <div>
-            <p>
+          <div className="startcareer">
+            <p className="paraStart">
               Start Your Career Here With <span>1000+</span> Best Jobs For You
             </p>
             <div className="search_homePage">
-              <input
+              <input className="searchInput"
                 type="search"
                 name=""
                 id=""
                 placeholder={"Find the job you want"}
               />
-              <button>Search</button>
-              <img src={Search} alt="" />
+              <button className="srcBtn">Search</button>
+              <img className="srcIcon" src={Search} alt="" />
             </div>
           </div>
-          <img src={HPImg} alt="" />
+          {/* <img className="girlImg" src={HPImg} alt="" /> */}
         </div>
-        <div className="job_categories_homePage">
-          <p>
-            Popular <span>Job</span> Categories
-          </p>
-          <p>
+        </div>
+        <div className="popularity">
+          <div className="popular">
+            Popular <span className="greenJob">Job</span> Categories
+          </div>
+          <div className="jobTxt">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam.
-          </p>
-        </div>
+          </div>
+          
+        
         <div className="categories_bar">
           <div className="categories1">
+            <div className="frst">
             <span>
               <img src={Vector} alt="" />
             </span>
@@ -111,25 +94,29 @@ export const HomePage = () => {
               <p>Lorem ipsum dolor sit </p>
             </div>
           </div>
-          <div className="categories1">
+          <div className="scnd">
             <span>
               <img src={laundry} alt="" />
             </span>
             <div>
               <p>Laundry</p>
               <p>Lorem ipsum dolor sit </p>
-            </div>
+            
           </div>
-          <div className="categories1">
+          </div>
+          <div className="thrd">
             <span>
               <img src={iron} alt="" />
             </span>
             <div>
               <p>Ironing</p>
               <p>Lorem ipsum dolor sit </p>
-            </div>
+            
           </div>
-          <div className="categories1">
+          </div>
+          </div>
+          <div className="categories2">
+            <div className="four">
             <span>
               <img src={plumbing} alt="" />
             </span>
@@ -137,8 +124,8 @@ export const HomePage = () => {
               <p>Plumbing</p>
               <p>Lorem ipsum dolor sit </p>
             </div>
-          </div>
-          <div className="categories1">
+            </div>
+            <div className="fift">
             <span>
               <img src={technology} alt="" />
             </span>
@@ -146,18 +133,20 @@ export const HomePage = () => {
               <p>Technology</p>
               <p>Lorem ipsum dolor sit </p>
             </div>
-          </div>
-          <div className="categories1">
+         
+            </div>
+            <div className="six">
             <span>
               <img src={beauty} alt="" />
             </span>
             <div>
               <p>Beauty</p>
               <p>Lorem ipsum dolor sit </p>
-            </div>
+            
           </div>
-        </div>
-        <div className="loginBar_homePage">
+          </div>
+        </div> </div></div>
+         <div className="loginBar_homePage">
           <p>How does it work</p>
           <div className="round_bar_homePage">
             <div className="round1">
@@ -184,7 +173,7 @@ export const HomePage = () => {
             <b>2</b>
             <b>3</b>
           </div>
-        </div>
+        </div> 
         <div className="min_round_left">
           <p></p>
           <p></p>
@@ -328,7 +317,7 @@ export const HomePage = () => {
         </div>
         <div className="buttons_bar">
           <div>
-            <button onClick={() => SignIn("SignIn")}>SignIn</button>
+             <button onClick={() => SignIn("SignIn")}>SignIn</button>
           </div>
           <div>
             <button onClick={() => JobListing("JobListing")}>JobListing</button>
@@ -339,10 +328,9 @@ export const HomePage = () => {
           <div>
             <button onClick={() => Verification("Verification")}>
               Verification
-            </button>
+            </button> 
           </div>
         </div>
-      </div>
-    </header>
+     </div>
   );
 };
