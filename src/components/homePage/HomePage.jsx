@@ -64,9 +64,11 @@ export const HomePage = () => {
                 name=""
                 id=""
                 placeholder={"Find the job you want"}
+                
               />
+               <img className="srcIcon" src={Search} alt="" />
               <button className="srcBtn">Search</button>
-              <img className="srcIcon" src={Search} alt="" />
+             
             </div>
           </div>
           {/* <img className="girlImg" src={HPImg} alt="" /> */}
@@ -87,30 +89,30 @@ export const HomePage = () => {
           <div className="categories1">
             <div className="frst">
             <span>
-              <img src={Vector} alt="" />
+              <img className="img1" src={Vector} alt="" />
             </span>
             <div>
               <p>Cleaning</p>
-              <p>Lorem ipsum dolor sit </p>
+              <p>lorem</p>
             </div>
           </div>
           <div className="scnd">
             <span>
-              <img src={laundry} alt="" />
+              <img className="img1" src={laundry} alt="" />
             </span>
             <div>
               <p>Laundry</p>
-              <p>Lorem ipsum dolor sit </p>
+              <p>lorem</p>
             
           </div>
           </div>
           <div className="thrd">
             <span>
-              <img src={iron} alt="" />
+              <img className="img1" src={iron} alt="" />
             </span>
             <div>
               <p>Ironing</p>
-              <p>Lorem ipsum dolor sit </p>
+              <p>lorem</p>
             
           </div>
           </div>
@@ -118,30 +120,30 @@ export const HomePage = () => {
           <div className="categories2">
             <div className="four">
             <span>
-              <img src={plumbing} alt="" />
+              <img className="img1" src={plumbing} alt="" />
             </span>
             <div>
               <p>Plumbing</p>
-              <p>Lorem ipsum dolor sit </p>
+              <p>lorem</p>
             </div>
             </div>
             <div className="fift">
             <span>
-              <img src={technology} alt="" />
+              <img className="img1"   src={technology} alt="" />
             </span>
             <div>
               <p>Technology</p>
-              <p>Lorem ipsum dolor sit </p>
+              <p>lorem</p>
             </div>
          
             </div>
             <div className="six">
             <span>
-              <img src={beauty} alt="" />
+              <img className="img1"  src={beauty} alt="" />
             </span>
             <div>
               <p>Beauty</p>
-              <p>Lorem ipsum dolor sit </p>
+              <p>Lorem </p>
             
           </div>
           </div>
@@ -151,7 +153,7 @@ export const HomePage = () => {
           <div className="round_bar_homePage">
             <div className="round1">
               <span>
-                <img src={IconPerson} alt="" />
+                <img className="img1"  src={IconPerson} alt="" />
               </span>
               <div>Login / Sign Up</div>
             </div>
