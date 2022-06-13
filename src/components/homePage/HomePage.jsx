@@ -51,288 +51,272 @@ export const HomePage = () => {
   };
   return (
     // <header className="header_homePage">
-      <div className="container_homePage">
-    <div className="first3">
-        <div className="title_homePage">
-          <div className="startcareer">
-            <p className="paraStart">
-              Start Your Career Here With <span>1000+</span> Best Jobs For You
-            </p>
-            <div className="search_homePage">
-              <input className="searchInput"
-                type="search"
-                name=""
-                id=""
-                placeholder={"Find the job you want"}
-                
-              />
-               <img className="srcIcon" src={Search} alt="" />
-              <button className="srcBtn">Search</button>
-             
-            </div>
+    <div className="container_homePage">
+      <div className="title_homePage">
+        <div className="startcareer">
+          <p className="paraStart">
+            Start Your Career Here With <span>1000+</span> Best Jobs For You
+          </p>
+          <div className="search_homePage">
+            <input
+              className="searchInput"
+              type="search"
+              name=""
+              id=""
+              placeholder={"AiOutlineSearch Find the job you want"}
+            />
+            {/* <img className="srcIcon" src={Search} alt="" /> */}
+            <button className="srcBtn">Search</button>
           </div>
-          {/* <img className="girlImg" src={HPImg} alt="" /> */}
         </div>
+        {/* <img className="girlImg" src={HPImg} alt="" /> */}
+      </div>
+
+      <div className="popularity">
+        <div className="popular">
+          Popular <span className="greenJob">Job</span> Categories
         </div>
-        <div className="popularity">
-          <div className="popular">
-            Popular <span className="greenJob">Job</span> Categories
-          </div>
-          <div className="jobTxt">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam.
-          </div>
-          
-        
+        <div className="jobTxt">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam.
+        </div>
+
         <div className="categories_bar">
           <div className="categories1">
             <div className="frst">
-            <span>
-              <img className="img1" src={Vector} alt="" />
-            </span>
-            <div>
-              <p>Cleaning</p>
-              <p>lorem</p>
+              <span className="imgDiv">
+                <img className="img1" src={Vector} alt="" />
+              </span>
+              <div>
+                <p>Cleaning</p>
+              </div>
             </div>
-          </div>
-          <div className="scnd">
-            <span>
-              <img className="img1" src={laundry} alt="" />
-            </span>
-            <div>
-              <p>Laundry</p>
-              <p>lorem</p>
-            
-          </div>
-          </div>
-          <div className="thrd">
-            <span>
-              <img className="img1" src={iron} alt="" />
-            </span>
-            <div>
-              <p>Ironing</p>
-              <p>lorem</p>
-            
-          </div>
-          </div>
+            <div className="frst">
+              <span className="imgDiv">
+                <img className="img1" src={laundry} alt="" />
+              </span>
+              <div>
+                <p>Laundry</p>
+              </div>
+            </div>
+            <div className="frst">
+              <span className="imgDiv">
+                <img className="img1" src={iron} alt="" />
+              </span>
+              <div>
+                <p>Ironing</p>
+              </div>
+            </div>
           </div>
           <div className="categories2">
             <div className="four">
-            <span>
-              <img className="img1" src={plumbing} alt="" />
-            </span>
-            <div>
-              <p>Plumbing</p>
-              <p>lorem</p>
-            </div>
+              <span>
+                <img className="img1" src={plumbing} alt="" />
+              </span>
+              <div>
+                <p>Plumbing</p>
+              </div>
             </div>
             <div className="fift">
-            <span>
-              <img className="img1"   src={technology} alt="" />
-            </span>
-            <div>
-              <p>Technology</p>
-              <p>lorem</p>
-            </div>
-         
+              <span>
+                <img className="img1" src={technology} alt="" />
+              </span>
+              <div>
+                <p>Technology</p>
+              </div>
             </div>
             <div className="six">
+              <span>
+                <img className="img1" src={beauty} alt="" />
+              </span>
+              <div>
+                <p>Beauty</p>
+              </div>
+            </div>
+          </div>{" "}
+        </div>
+      </div>
+      <div className="loginBar_homePage">
+        <p>How Does it Work</p>
+        <div className="right_round">
+          <div className="numbers">1</div>
+          <div className="numbers">2</div>
+          <div className="numbers">3</div>
+        </div>
+        <div className="round_bar_homePage">
+          <div className="round1">
+            <img className="LogImg" src={IconPerson} alt="" />
+          </div>
+          <div className="round2">
             <span>
-              <img className="img1"  src={beauty} alt="" />
+              <img src={IconList} alt="" />
             </span>
-            <div>
-              <p>Beauty</p>
-              <p>Lorem </p>
-            
           </div>
+          <div className="round3">
+            <span>
+              <img src={IconList1} alt="" />
+            </span>
           </div>
-        </div> </div></div>
-         <div className="loginBar_homePage">
-          <p>How does it work</p>
-          <div className="round_bar_homePage">
-            <div className="round1">
-              <span>
-                <img className="img1"  src={IconPerson} alt="" />
-              </span>
-              <div>Login / Sign Up</div>
-            </div>
-            <div className="round2">
-              <span>
-                <img src={IconList} alt="" />
-              </span>
-              <div>Search Job</div>
-            </div>
-            <div className="round3">
-              <span>
-                <img src={IconList1} alt="" />
-              </span>
-              <div>Apply For Job</div>
-            </div>
-          </div>
-          <div className="right_round">
-            <b>1</b>
-            <b>2</b>
-            <b>3</b>
-          </div>
-        </div> 
-        <div className="min_round_left">
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
         </div>
-        <div className="min_round_right">
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
+
+        <div className="HDWtext">
+          <div>Login/Signup</div>
+          <div>Search Job</div>
+          <div>Apply For Job</div>
         </div>
-        <div className="topWorkers_homePage">
-          <div id="title_topWorkers">
-            <div>
-              Top <span> Workers</span>
-            </div>
-            <div>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam.
+      </div>
+      <div className="min_round_left">
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+      </div>
+      <div className="min_round_right">
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+      </div>
+
+      <div className="topWorkers_homePage">
+        <div id="title_topWorkers">
+          <div className="topWorkers">
+            Top <span id="greenWork"> Workers</span>
+          </div>
+          <div className="topWorkTxt">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </div>
+        </div>
+        <div className="workersImg">
+    
+          <div id="user_workers2">
+            <img className="imgBig" src={Fl} alt="" />
+            <div className="centerWork">
+              {" "}
+              <div className="imgWork"></div>
+              <p>Sam William</p>
+              <p>UI/UX Designer</p>
+              <span></span>
+              <div className="star_workers">
+                <img src={Star} alt="" />
+                <img src={Star} alt="" />
+                <img src={Star} alt="" />
+                <img src={Star} alt="" />
+                <img src={Star1} alt="" />
+              </div>
+              <p className="view">View</p>
             </div>
           </div>
           <div id="user_workers1">
-            <div>
-              <img src={Fl} alt="" />
-            </div>
-            <p>Sam William</p>
-            <p>UI/UX Designer</p>
-            <span>
-              <p>View</p>
-            </span>
-            <div className="star_workers">
-              <img src={Star} alt="" />
-              <img src={Star} alt="" />
-              <img src={Star} alt="" />
-              <img src={Star} alt="" />
-              <img src={Star1} alt="" />
-            </div>
-          </div>
-          <div id="user_workers2">
-            <div>
-              <img src={Fl} alt="" />
-            </div>
-            <p>Sam William</p>
-            <p>UI/UX Designer</p>
-            <span>
-              <p>View</p>
-            </span>
-            <div className="star_workers">
-              <img src={Star} alt="" />
-              <img src={Star} alt="" />
-              <img src={Star} alt="" />
-              <img src={Star} alt="" />
-              <img src={Star1} alt="" />
+            <img className="imgBig" src={Fl} alt="" />
+            <div className="centerWork">
+              {" "}
+              <div className="imgWork"></div>
+              <p>Sam William</p>
+              <p>UI/UX Designer</p>
+              <span></span>
+              <div className="star_workers">
+                <img src={Star} alt="" />
+                <img src={Star} alt="" />
+                <img src={Star} alt="" />
+                <img src={Star} alt="" />
+                <img src={Star1} alt="" />
+              </div>
+              <p className="view">View</p>
             </div>
           </div>
           <div id="user_workers3">
-            <div>
-              <img src={Fl} alt="" />
-            </div>
-            <p>Sam William</p>
-            <p>UI/UX Designer</p>
-            <span>
-              <p>View</p>
-            </span>
-            <div className="star_workers">
-              <img src={Star} alt="" />
-              <img src={Star} alt="" />
-              <img src={Star} alt="" />
-              <img src={Star} alt="" />
-              <img src={Star1} alt="" />
+            <img className="imgBig" src={Fl} alt="" />
+            <div className="centerWork">
+              {" "}
+              <div className="imgWork"></div>
+              <p>Sam William</p>
+              <p>UI/UX Designer</p>
+              <span></span>
+              <div className="star_workers">
+                <img src={Star} alt="" />
+                <img src={Star} alt="" />
+                <img src={Star} alt="" />
+                <img src={Star} alt="" />
+                <img src={Star1} alt="" />
+              </div>
+              <p className="view">View</p>
             </div>
           </div>
           <div id="user_workers4">
-            <div>
-              <img src={Fl} alt="" />
+            <img className="imgBig" src={Fl} alt="" />
+            <div className="centerWork">
+              {" "}
+              <div className="imgWork"></div>
+              <p>Sam William</p>
+              <p>UI/UX Designer</p>
+              <span></span>
+              <div className="star_workers">
+                <img src={Star} alt="" />
+                <img src={Star} alt="" />
+                <img src={Star} alt="" />
+                <img src={Star} alt="" />
+                <img src={Star1} alt="" />
+              </div>
+              <p className="view">View</p>
             </div>
-            <p>Sam William</p>
-            <p>UI/UX Designer</p>
-            <span>
-              <p>View</p>
-            </span>
-            <div className="star_workers">
-              <img src={Star} alt="" />
-              <img src={Star} alt="" />
-              <img src={Star} alt="" />
-              <img src={Star} alt="" />
-              <img src={Star1} alt="" />
-            </div>
-          </div>
-          <div>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div className="end_page">
-            <p></p>
-            <p></p>
-            <p></p>
           </div>
         </div>
-        <div className="footer_homePage">
+        <div>
           <span></span>
-          <div>
-            <p>Job</p>
-            <p>Start Your Career Here With 1000+ Best Jobs For You</p>
-          </div>
-          <div>
-            <p>Company</p>
-            <p>Categories</p>
-            <p>About Us</p>
-          </div>
-          <div>
-            <p>Contacts</p>
-            <p>
-              <img src={Location} alt="" /> Baghramyan 18
-            </p>
-
-            <p>
-              <img src={Phone} alt="" /> +374 41 277439
-            </p>
-
-            <p>
-              <img src={email} alt="" /> arpifytech@gmail.com
-            </p>
-          </div>
-          <div>
-            <img src={FBGreen} alt="" />
-            <img src={InstagramGreen} alt="" />
-            <img src={TelegramGreen} alt="" />
-          </div>
+          <span></span>
+          <span></span>
         </div>
-        <div className="buttons_bar">
-          <div>
-             <button onClick={() => SignIn("SignIn")}>SignIn</button>
-          </div>
-          <div>
-            <button onClick={() => JobListing("JobListing")}>JobListing</button>
-          </div>
-          <div>
-            <button onClick={() => ForgotPass("ForgotPass")}>ForgotPass</button>
-          </div>
-          <div>
-            <button onClick={() => Verification("Verification")}>
-              Verification
-            </button> 
-          </div>
+
+        <div className="end_page">
+          <p></p>
+          <p></p>
+          <p></p>
         </div>
-     </div>
+      </div>
+      <div className="footer_homePage">
+        <span></span>
+        <div>
+          <p>Job</p>
+          <p>Start Your Career Here With 1000+ Best Jobs For You</p>
+        </div>
+        <div>
+          <p>Company</p>
+          <p>Categories</p>
+          <p>About Us</p>
+        </div>
+        <div>
+          <p>Contacts</p>
+          <p>
+            <img src={Location} alt="" /> Baghramyan 18
+          </p>
+
+          <p>
+            <img src={Phone} alt="" /> +374 41 277439
+          </p>
+
+          <p>
+            <img src={email} alt="" /> arpifytech@gmail.com
+          </p>
+        </div>
+        <div>
+          <img src={FBGreen} alt="" />
+          <img src={InstagramGreen} alt="" />
+          <img src={TelegramGreen} alt="" />
+        </div>
+      </div>
+  
+    </div>
   );
 };
