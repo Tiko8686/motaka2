@@ -5,11 +5,15 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 290px;
+  padding-bottom: 50px;
 }
 
 ul {
   margin: 0;
   padding: 0;
+}
+.motaka{
+  color: #0DC46E;
 }
 
 nav > ul {

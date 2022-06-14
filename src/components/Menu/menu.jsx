@@ -12,9 +12,9 @@ export function Menu() {
   const [userFb, setUserFb] = useState("");
   const [bool, setBool] = useState(false);
   const navigate = useNavigate();
-  const Signup=()=>{
-      navigate('/signup')
-  }
+  const Signup = () => {
+    navigate("/signup");
+  };
   useEffect(() => {
     setUser(JSON.parse(localStorage.getItem("user")));
     setUserGoogle(JSON.parse(localStorage.getItem("userGoogle")));
@@ -31,10 +31,12 @@ export function Menu() {
       >
         <ul>
           <li>
-            <Link to="/">MOtAKa LOGO</Link>
+            <Link className="motaka" to="/">
+              MOtAKa LOGO
+            </Link>
           </li>
         </ul>
-        <ul className="menu-list">
+        <ul className="menu-list"> 
           <li className="dropdown">
             <span className="category">Categories</span>
             <div className="dropdown-content">
@@ -51,7 +53,9 @@ export function Menu() {
         </ul>
         <ul className="right-list">
           <li className="login-btn">
-            <button className="signup" onClick={Signup}>SignUp</button>
+            <button className="signup" onClick={Signup}>
+              SignUp
+            </button>
           </li>
           <li>
             <div className="menu" onClick={() => setMenuBool(!menuBool)}>

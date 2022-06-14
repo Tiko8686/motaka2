@@ -24,6 +24,7 @@ import technology from "../image/technology.jpg";
 import beauty from "../image/beauty.jpg";
 import { useNavigate } from "react-router";
 export const HomePage = () => {
+
   const navigate = useNavigate();
   const About = () => {
     navigate("/aboutus");
@@ -55,7 +56,7 @@ export const HomePage = () => {
       <div className="title_homePage">
         <div className="startcareer">
           <p className="paraStart">
-            Start Your Career Here With <span>1000+</span> Best Jobs For You
+            Start Your Career Here With <span className="green1000">1000+</span> Best Jobs For You
           </p>
           <div className="search_homePage">
             <input
@@ -63,9 +64,10 @@ export const HomePage = () => {
               type="search"
               name=""
               id=""
-              placeholder={"AiOutlineSearch Find the job you want"}
+              // placeholder={<img className="srcIcon" src={Search} />+"Find the job you want"}
+              placeholder="&#xF002; Search"
             />
-            {/* <img className="srcIcon" src={Search} alt="" /> */}
+            
             <button className="srcBtn">Search</button>
           </div>
         </div>
@@ -286,31 +288,31 @@ export const HomePage = () => {
         </div>
       </div>
       <div className="footer_homePage">
-        <span></span>
-        <div>
-          <p>Job</p>
-          <p>Start Your Career Here With 1000+ Best Jobs For You</p>
+        
+        <div className="footerJob">
+          <p className="greenJob2">Job</p>
+          <p>Start Your Career Here With <br></br>1000+ Best Jobs For You</p>
         </div>
-        <div>
-          <p>Company</p>
+        <div className="footerComp">
+          <p className="comp">Company</p>
           <p>Categories</p>
           <p>About Us</p>
         </div>
-        <div>
-          <p>Contacts</p>
+        <div className="contacts">
+          <p className="cont">Contacts</p>
           <p>
             <img src={Location} alt="" /> Baghramyan 18
           </p>
 
           <p>
-            <img src={Phone} alt="" /> +374 41 277439
+            <img src={Phone} alt="" /> +374 000000
           </p>
 
           <p>
             <img src={email} alt="" /> arpifytech@gmail.com
           </p>
         </div>
-        <div>
+        <div className="inst">
           <img src={FBGreen} alt="" />
           <img src={InstagramGreen} alt="" />
           <img src={TelegramGreen} alt="" />
