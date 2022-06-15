@@ -159,9 +159,52 @@ function Profile() {
     // };
     return (
         <>
-            <div className="profilePage">
+       
+           <div className="profilePage">
+           <h1>Post a Job</h1>
+                <div className="my_info">
+                    <div className="name_and_pic">
+                        <div className="pic_div">
+                             
+                            <img
+                                className="autor_pic"
+                                src={picture.croppedImg}
+                                alt="profile_pic"
+                            />
+                            <label htmlFor="profile_photo" className="bi bi-camera edit_profile_pic"></label>
+                            <input type="file" id="profile_photo" onChange={(e) => {
+                                let url = URL.createObjectURL(e.target.files[0]);
+                                setPicture({
+                                    ...picture,
+                                    img: url,
+                                    cropperOpen: true
+                                });
+                            }} />
+                        </div>
+                     
+                    </div>
+                    <div>
+                       
+                    </div>
+                </div>
+                <div className="profile_menu">
+                    <ul className="profile_menu_list">
+                        <li>
+                            <Link to="post">Posts</Link>
+                        </li>
+                        <li>
+                            <Link to="category">Categories</Link>
+                        </li>
+                        <li>
+                            <Link to="saved">Saved</Link>
+                        </li>
+                    </ul> 
+                </div>
+            </div>
+
+            {/*  <div className="profilePage">
                 <div className="profile_background">
-                    {/* bacground photo */}
+                    bacground photo 
                     <img
                         className="background_pic"
                         src={pictureBack.croppedImg}
@@ -182,7 +225,7 @@ function Profile() {
                 <div className="my_info">
                     <div className="name_and_pic">
                         <div className="pic_div">
-                            {/* profile pic */}
+                             profile pic 
                             <img
                                 className="autor_pic"
                                 src={picture.croppedImg}
@@ -226,7 +269,7 @@ function Profile() {
                         <li>
                             <Link to="saved">Saved</Link>
                         </li>
-                    </ul> */}
+                    </ul> 
                 </div>
             </div>
             {picture.cropperOpen && (
@@ -253,7 +296,7 @@ function Profile() {
                         ></Slider>
                         <Box>
                             <Button variant="contained" onClick={handleCancel}>Cancel</Button>
-                            {/* <Button onClick={handleSave}>Save</Button> */}
+                            {/* <Button onClick={handleSave}>Save</Button> 
                         </Box>
                     </Box>
                 </div>
@@ -281,12 +324,12 @@ function Profile() {
                         ></Slider>
                         <Box>
                             <Button variant="contained" onClick={handleCancelBack}>Cancel</Button>
-                            {/* <Button onClick={handleSaveBack}>Save</Button> */}
+                            {/* <Button onClick={handleSaveBack}>Save</Button> 
                         </Box>
                     </Box>
                 </div>
             )}
-            <Outlet />
+            <Outlet />  */}
         </>
     );
 }

@@ -1,5 +1,4 @@
 import React from "react";
-
 import "./Homepage.scss";
 import chat from "../image/chat.jpg";
 import HPImg from "../image/HPImg.png";
@@ -24,7 +23,6 @@ import technology from "../image/technology.jpg";
 import beauty from "../image/beauty.jpg";
 import { useNavigate } from "react-router";
 export const HomePage = () => {
-
   const navigate = useNavigate();
   const About = () => {
     navigate("/aboutus");
@@ -56,18 +54,20 @@ export const HomePage = () => {
       <div className="title_homePage">
         <div className="startcareer">
           <p className="paraStart">
-            Start Your Career Here With <span className="green1000">1000+</span> Best Jobs For You
+            Start Your Career Here With <span className="green1000">1000+</span>{" "}
+            Best Jobs For You
           </p>
           <div className="search_homePage">
             <input
+            
               className="searchInput"
               type="search"
               name=""
               id=""
               // placeholder={<img className="srcIcon" src={Search} />+"Find the job you want"}
-              placeholder="&#xF002; Search"
+              placeholder="Find the job you want"
             />
-            
+<img className="srcIcon" src={Search} />
             <button className="srcBtn">Search</button>
           </div>
         </div>
@@ -201,7 +201,6 @@ export const HomePage = () => {
           </div>
         </div>
         <div className="workersImg">
-    
           <div id="user_workers2">
             <img className="imgBig" src={Fl} alt="" />
             <div className="centerWork">
@@ -288,10 +287,11 @@ export const HomePage = () => {
         </div>
       </div>
       <div className="footer_homePage">
-        
         <div className="footerJob">
           <p className="greenJob2">Job</p>
-          <p>Start Your Career Here With <br></br>1000+ Best Jobs For You</p>
+          <p>
+            Start Your Career Here With <br></br>1000+ Best Jobs For You
+          </p>
         </div>
         <div className="footerComp">
           <p className="comp">Company</p>
@@ -318,7 +318,6 @@ export const HomePage = () => {
           <img src={TelegramGreen} alt="" />
         </div>
       </div>
-  
     </div>
   );
 };
