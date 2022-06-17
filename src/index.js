@@ -8,6 +8,7 @@ import { Store } from "./store";
 
 ReactDOM.render(
   <Provider store={Store}>
+     <link href="css/bootstrap.min.css" rel="stylesheet"></link>
     <App/>
   </Provider>,
   document.getElementById("root")

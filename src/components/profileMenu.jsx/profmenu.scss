@@ -1,0 +1,52 @@
+.profflex {
+  display: flex;
+  justify-content: center;
+}
+.postjobprof {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.profContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  width: 300px;
+}
+.imgWork {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 129px;
+  height: 129px;
+  border-radius: 100%;
+  background: rgba(196, 196, 196, 0.57);
+}
+.div1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+}
+.div2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+}
+.div3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+}
+.postjobprof {
+  display: flex;
+  
+ 
+}
