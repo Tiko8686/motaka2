@@ -1,0 +1,10 @@
+.profContainer{
+    display: flex;
+    justify-content: center;
+    
+}
+.postjob1{
+display: flex;
+justify-content: center;
+gap: 100px;
+}

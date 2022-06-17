@@ -15,6 +15,9 @@ export function Menu() {
   const Signup = () => {
     navigate("/signup");
   };
+  const Profile = () => {
+    navigate("/profile");
+  };
   useEffect(() => {
     setUser(JSON.parse(localStorage.getItem("user")));
     setUserGoogle(JSON.parse(localStorage.getItem("userGoogle")));
@@ -47,7 +50,7 @@ export function Menu() {
               <Link to="/category/psychological">Technology</Link>
             </div>
           </li>
-          <li>
+          <li> 
             <Link to="/aboutus">About Us</Link>
           </li>
         </ul>
@@ -56,6 +59,7 @@ export function Menu() {
             <button className="signup" onClick={Signup}>
               SignUp
             </button>
+            <button onClick={Profile}>Profile</button>
           </li>
           <li>
             <div className="menu" onClick={() => setMenuBool(!menuBool)}>
@@ -83,19 +87,19 @@ export function Menu() {
                   onClick={() => setMenuBool(false)}
                 >
                   <li>
-                    <Link to="/category/professional">Professional</Link>
+                    <Link to="/category/professional">Cleaning</Link>
                   </li>
                   <li>
-                    <Link to="/category/artistic">Artistic</Link>
+                    <Link to="/category/artistic">Laundry</Link>
                   </li>
                   <li>
-                    <Link to="/category/historical">Historical</Link>
+                    <Link to="/category/historical">Ironing</Link>
                   </li>
                   <li>
-                    <Link to="/category/motivational">Motivational</Link>
+                    <Link to="/category/motivational">Plumbing</Link>
                   </li>
                   <li>
-                    <Link to="/category/psychological">Psychological</Link>
+                    <Link to="/category/psychological">Technology</Link>
                   </li>
                 </ul>
               </li>

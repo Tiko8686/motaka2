@@ -48,6 +48,9 @@ export const HomePage = () => {
   const Verification = (value) => {
     navigate("/verification");
   };
+  const Profile = (value) => {
+    navigate("/profile");
+  };
   return (
     // <header className="header_homePage">
     <div className="container_homePage">

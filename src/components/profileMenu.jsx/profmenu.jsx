@@ -5,12 +5,17 @@ import PostJob from "../PostaJob/PostaJob";
 import ImageAvatars from "../PostaJob/PostaJob";
 import "./profmenu.scss";
 function Profmenu() {
-  return (<div className="profflex">
+  return (
+    <div className="fullPage">
+    <h1 className="header1">Post a Job</h1>
+    <div className="profflex">
+    
     <div className="profContainer">
-      <div className="imgWork"></div>
+      
+      <div className="imgWork1"></div>
       <div className="div1">
         Sam Wiliams
-        <div className="div2">UI/UX designer</div>{" "}
+        <div className="div2">UI/UX </div>{" "}
       </div>
       <div className="div3"> My Profile</div>
       <div className="div3">Post a Job</div>
@@ -20,8 +25,7 @@ function Profmenu() {
       <div className="div3">Verify Account</div>
       
     </div>
-    <div className="postjobprof"> 
-    <PostJob></PostJob>
+    
     </div>
     </div>
   );

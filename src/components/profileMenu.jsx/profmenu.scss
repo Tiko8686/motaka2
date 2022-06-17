@@ -1,13 +1,9 @@
 .profflex {
   display: flex;
   justify-content: center;
+  padding-left: 600px;
 }
-.postjobprof {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-}
 .profContainer {
   display: flex;
   justify-content: center;
@@ -15,14 +11,21 @@
   gap: 30px;
   width: 300px;
 }
-.imgWork {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.imgWork1 {
+ text-align: center;
+ align-items: center;
+ justify-content: center;
   width: 129px;
   height: 129px;
   border-radius: 100%;
   background: rgba(196, 196, 196, 0.57);
+}
+
+.header1{
+display: flex;
+justify-content: center;
+padding-left: 650px;
+width: 200px;
 }
 .div1 {
   font-family: "Poppins";
@@ -30,8 +33,16 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .div2 {
+display: flex;
+
+
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -44,9 +55,4 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 18px;
-}
-.postjobprof {
-  display: flex;
-  
- 
 }
